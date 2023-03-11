@@ -1,0 +1,257 @@
+{
+  "id": "5f67f2a7-1319-491c-b53e-4a88fb2856d6",
+  "version": "2.0",
+  "name": "Amazon",
+  "url": "http://amazon.com/",
+  "tests": [{
+    "id": "44757acc-00cd-4e30-b6df-5aeee0169b69",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "c61eaa0d-da72-4048-b4fc-cc2a7ed330f2",
+    "name": "IncorrectUsername/Password",
+    "commands": [{
+      "id": "dfc14ef0-d699-4c3a-8377-b17e6f65ec3c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5fa686d-33f0-4fab-be85-94a84e661129",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1153x698",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df5b58a4-dc62-4f4d-8339-e886dd7c4192",
+      "comment": "",
+      "command": "click",
+      "target": "css=#nav-signin-tooltip .nav-action-inner",
+      "targets": [
+        ["css=#nav-signin-tooltip .nav-action-inner", "css:finder"],
+        ["xpath=//div[@id='nav-signin-tooltip']/a/span", "xpath:idRelative"],
+        ["xpath=//div[13]/div[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0211c50-b20b-4cbe-af39-fdd808a1c1d1",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "ebere@yahoo.com"
+    }, {
+      "id": "202b9b20-7ed0-4197-bc07-618d91e23abc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-button-inner > #continue",
+      "targets": [
+        ["css=.a-button-inner > #continue", "css:finder"],
+        ["xpath=//input[@id='continue']", "xpath:attributes"],
+        ["xpath=//span[@id='continue']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "839d8989-31fd-448e-be50-6bee613750dd",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_password",
+      "targets": [
+        ["id=ap_password", "id"],
+        ["name=password", "name"],
+        ["css=#ap_password", "css:finder"],
+        ["xpath=//input[@id='ap_password']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "f83463db-9366-4c78-8879-d2c9d424dfc2",
+      "comment": "",
+      "command": "click",
+      "target": "id=signInSubmit",
+      "targets": [
+        ["id=signInSubmit", "id"],
+        ["css=#signInSubmit", "css:finder"],
+        ["xpath=//input[@id='signInSubmit']", "xpath:attributes"],
+        ["xpath=//span[@id='auth-signin-button']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00251dee-53a7-4b58-b401-52d4c89a61b4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=signInSubmit",
+      "targets": [
+        ["id=signInSubmit", "id"],
+        ["css=#signInSubmit", "css:finder"],
+        ["xpath=//input[@id='signInSubmit']", "xpath:attributes"],
+        ["xpath=//span[@id='auth-signin-button']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7ec4785-626f-46a7-bd73-eb42290c577d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#auth-error-message-box > .a-box-inner",
+      "targets": [
+        ["css=#auth-error-message-box > .a-box-inner", "css:finder"],
+        ["xpath=//div[@id='auth-error-message-box']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f9961ba-42f4-41c0-b84f-ca404091058e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li",
+      "targets": [
+        ["css=li", "css:finder"],
+        ["xpath=//div[@id='auth-error-message-box']/div/div/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Your password is incorrect')]", "xpath:innerText"]
+      ],
+      "value": "Your password is incorrect"
+    }]
+  }, {
+    "id": "e4bd6500-6f4f-4b65-be0a-a4e5ac9be0c3",
+    "name": "CorrectUsername/incorrectPassword",
+    "commands": [{
+      "id": "6a78f7e9-b97f-4b32-8f05-b1bba36a1bc0",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3eb7bc2-635f-444d-9530-4ace2c2e2a36",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1153x698",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e634c735-6916-4e36-b616-e5d63a5ea35b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#nav-signin-tooltip .nav-action-inner",
+      "targets": [
+        ["css=#nav-signin-tooltip .nav-action-inner", "css:finder"],
+        ["xpath=//div[@id='nav-signin-tooltip']/a/span", "xpath:idRelative"],
+        ["xpath=//div[13]/div[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b86d97e-0ae3-484e-8775-c3119495770e",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "ebere.arinze@gmail.com"
+    }, {
+      "id": "0588aed2-e3be-4e8f-88d8-1964b84593d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-button-inner > #continue",
+      "targets": [
+        ["css=.a-button-inner > #continue", "css:finder"],
+        ["xpath=//input[@id='continue']", "xpath:attributes"],
+        ["xpath=//span[@id='continue']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98ae62ed-bc23-4e6b-801c-ab3b2731424f",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_password",
+      "targets": [
+        ["id=ap_password", "id"],
+        ["name=password", "name"],
+        ["css=#ap_password", "css:finder"],
+        ["xpath=//input[@id='ap_password']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "285400c5-5b7c-4fb9-a0d1-3e84a6aadef8",
+      "comment": "",
+      "command": "click",
+      "target": "id=signInSubmit",
+      "targets": [
+        ["id=signInSubmit", "id"],
+        ["css=#signInSubmit", "css:finder"],
+        ["xpath=//input[@id='signInSubmit']", "xpath:attributes"],
+        ["xpath=//span[@id='auth-signin-button']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b42f66e5-20db-4bd4-b960-ac5c3910f9d2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=signInSubmit",
+      "targets": [
+        ["id=signInSubmit", "id"],
+        ["css=#signInSubmit", "css:finder"],
+        ["xpath=//input[@id='signInSubmit']", "xpath:attributes"],
+        ["xpath=//span[@id='auth-signin-button']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a1dd47c-7280-431b-9dda-118304fba559",
+      "comment": "",
+      "command": "click",
+      "target": "css=#auth-error-message-box > .a-box-inner",
+      "targets": [
+        ["css=#auth-error-message-box > .a-box-inner", "css:finder"],
+        ["xpath=//div[@id='auth-error-message-box']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1528a4a-bd25-4d28-a4b0-9b000f5e3255",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li",
+      "targets": [
+        ["css=li", "css:finder"],
+        ["xpath=//div[@id='auth-error-message-box']/div/div/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Your password is incorrect')]", "xpath:innerText"]
+      ],
+      "value": "Your password is incorrect"
+    }]
+  }],
+  "suites": [{
+    "id": "a61ef25c-f866-4881-89e1-684f703a57f0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["44757acc-00cd-4e30-b6df-5aeee0169b69"]
+  }],
+  "urls": ["http://amazon.com/"],
+  "plugins": []
+}
